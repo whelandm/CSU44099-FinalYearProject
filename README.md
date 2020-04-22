@@ -17,7 +17,7 @@ It also makes use of the [Intel Real Sense SDK](https://github.com/IntelRealSens
 1. Download this repository.
 2. Extract its contents to the TF Pose Estimation directory.
 3. (Optional) Install [Anaconda](https://docs.anaconda.com/anaconda/install/). 
-4. Download the training and testing video files from here and here. 
+4. Download the training and testing video files from [here](https://drive.google.com/file/d/1j-DRWWu6NT5N_idQ-7UQxPjGsr5F_A8Z/view?usp=sharing).
 5. Extract the training and testing folders to the TF Pose Estimation directory.
 6. Run the test harness to see if all dependencies are installed.
 
