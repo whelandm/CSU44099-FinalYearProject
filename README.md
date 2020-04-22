@@ -6,8 +6,6 @@ The aim of this project is to develop a Computer Vision based solution to identi
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
 This project requires the installation of [TF Pose Estimation](https://github.com/ildoonet/tf-pose-estimation) from [Ildoo Kim](https://github.com/ildoonet). 
