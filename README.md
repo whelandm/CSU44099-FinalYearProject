@@ -34,15 +34,31 @@ Below is a breakdown of the python scripts included and their purpose.
 ### test_harness.py
 The test harness is the main compenent which takes in the video file (must be .bag format) and reads in the video stream.
 From this the classification is given and test ran, and displayed to user.
-
 ```
 python test_harness.py -i .BAG FILE PATH
 ```
 
 ### classifier.py
-
 Contains all the classification tests for each of the actions within the action set.
 
-### classifier.py
+### state_machine.py
+Mapping of valid transitions between one action to the next
 
-Contains all the classification tests for each of the actions within the action set. 
+### wash_tracker.py
+For coverage measuring. Included is unused method which makes use of depth stream.
+
+### data_analyser.py
+Reads and plots datasets from .csv files, mapping data relating to keypoint locations, keypoint distances, and keypoint optical flow. 
+Note that only location and distance data is used.
+
+### data_logger.py
+Can be used to append additional frames of data to a designated file, must be in .bag format.
+```
+python data_logger.py -i .BAG FILE PATH
+```
+
+### data_visualiser.py
+Can be used to visualise the current dataset, including their lines of best fit.
+```
+python data_visualiser.py
+```
