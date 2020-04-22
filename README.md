@@ -1,4 +1,4 @@
-# Final Year Project - Measureing Surgical Scrub
+# Final Year Project - Measuring Surgical Scrub
 
 This project examines the application of upper body tracking for uses relating to the measuring of the Surgical Scrub Technique, as defined by the World Health Organization. 
 This washing technique occurs between surgeries but is prone to human error. 
@@ -62,3 +62,25 @@ Can be used to visualise the current dataset, including their lines of best fit.
 ```
 python data_visualiser.py
 ```
+
+## Dataset Descriptions
+
+Below is a breakdown of the datasets included, found in the .csv files. All data is taken from the training videos, which contain 10 unique videos for each of the individual actions (dip left, dip right, wash left, wash right).
+
+### Keypoint Location
+```
+Files: dipLeft.csv, dipRight.csv, washLeft.csv, wasRight.csv
+```
+The data points represent the location of the arm keypoints in the current frame, these are specific to each of the actions within the protocol. 
+
+### Keypoint Distances
+```
+Files: dipLeftDistance.csv, dipRightDistance.csv, washLeftDistance.csv, wasRightDistance.csv
+```
+Each row represents the distance between opposing keypoints for that frame; from wrist to wrist, left wrist to right elbow, and and right wrist to left elbow.
+
+### Keypoint Optical Flow
+```
+Files: dipLeftOptical.csv, dipRightOptical.csv, washLeftOptical.csv, wasRightOptical.csv
+```
+Each data point contains the magnitude and angle of the keypoints for a given frame.
